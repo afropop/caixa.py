@@ -1,0 +1,125 @@
+##Banco IF and Else
+
+print("=" * 34)
+print("{:^34}".format("INTERNATIONAL BANK DUBAI UAE"))
+print("=" * 34)
+print("=" * 34)
+print(f"     MENU DE OPERAÇÕES")
+print("=" * 34)
+print("Opções:")
+print("1 - Meus Dados")
+print("2 - Saque")
+print("3 - Pagamento")
+print("4 - Tarnsferência")
+print("5 - Deposito")
+print("6 - Cheque Especial")
+print("7 - Sair")
+opcao = input('Digite a opção desejada: ')
+if opcao == "1":
+    print("=" * 34)
+    print(f"     DADOS DO CLIENTE")
+    print("=" * 34)
+    print("Cliente: Jefferson Marques.")
+    print("Cpf: 547.521.365-89.")
+    print("Profissao: Desenvolvedor Senior.")
+    print("Agencia: 0001")
+    print("Conta: 45789")
+    print("Digito: 1")
+    print("Volte sempre ao INTERNATIONAL BANK DUBAI UAE!")
+    aperte = input("Aperte (X) para sair: ")
+    if aperte == 'X' or aperte == 'x': 
+        exit()
+    else:
+        self.menu()
+    
+elif opcao == "2":
+    valor = int(input("Que valor você quer sacar? R$"))
+    print("\n\nAnalisando a transação....")    
+    print("Valor total do saque é de R$: ", valor)
+    print("=" * 30)
+    print("Saque realizado com sucesso")
+    print("Volte sempre ao INTERNATIONAL BANK DUBAI UAE!")
+    aperte = input("Aperte (X) para sair: ")
+    if aperte == 'X' or aperte == 'x': 
+        exit()
+    else:
+        self.menu()
+
+elif opcao == "3":
+    valor = int(input("Que valor você quer Pagar? R$"))
+    print("\n\nAnalisando a transação....")
+    print("-[ Lendo Código de Barras ]-")
+    print("Valor total do Pagamento é de R$: ", valor)
+    print("=" * 30)
+    print("Pagamento realizado com sucesso")
+    print("Volte sempre ao INTERNATIONAL BANK DUBAI UAE!")
+    aperte = input("Aperte (X) para sair: ")
+    if aperte == 'X' or aperte == 'x': 
+        exit()
+    else:
+        self.menu()
+
+elif opcao == "4":
+    valor = int(input("Que valor você quer Tarnsferir? R$"))
+    banco = input("qual o Banco que deseja Transferir COD: ")
+    agencia = int(input("Digite a Agência:  "))
+    conta = int(input("Digite a conta: "))
+    digito = int(input("digite o digito da conta: "))
+    print("=" * 34)
+    print(f"     DADOS DA TRANSFERÊNCIA")
+    print("=" * 34)
+    print("Agencia: ", agencia)
+    print("Conta: ", conta)
+    print("Digito: ", digito)
+    print("Valor: ", valor)
+    print("\n\nAnalisando a transação....")          
+    print("=" * 30)
+    print("Transferencia realizado com sucesso")
+    print("Volte sempre ao INTERNATIONAL BANK DUBAI UAE!")
+    aperte = input("Aperte (X) para sair: ")
+    if aperte == 'X' or aperte == 'x': 
+        exit()
+    else:
+        self.menu()
+
+elif opcao == "5":
+    valor = int(input("Digite o Valor do depósito R$"))
+    agencia = int(input("Digite a Agência:  "))
+    conta = int(input("Digite a conta: "))
+    digito = int(input("digite o digito da conta: "))
+    print("=" * 34)
+    print(f"     DADOS DO DEPÓSITO")
+    print("=" * 34)
+    print("Agencia: ", agencia)
+    print("Conta: ", conta)
+    print("Digito: ", digito)
+    print("Valor: ", valor)
+    print("\n\nAnalisando a transação....")          
+    print("=" * 30)
+    print("Deposito realizado com sucesso")
+    print("Volte sempre ao INTERNATIONAL BANK DUBAI UAE!")
+    aperte = input("Aperte (X) para sair: ")
+    if aperte == 'X' or aperte == 'x': 
+        exit()
+    else:
+        self.menu()
+
+elif opcao == "6":
+    print("Bem vindo Jefferson, você ja tem crédito especial pre-aprovado")
+    valor = int(input("Digite o Valor do crédito especial desejado R$"))
+    print("\n\nAnalisando a transação....")
+    print("Crédito pessoal concedido")
+    print("=" * 34)
+    print(f"     DADOS DO CRÉDITO ESPECIAL")
+    print("=" * 34)
+    print("Valor Atual", valor)
+    print("=" * 30)
+    print("Volte sempre ao INTERNATIONAL BANK DUBAI UAE!")
+    aperte = input("Aperte (X) para sair: ")
+    if aperte == 'X' or aperte == 'x': 
+        exit()
+    else:
+        self.menu()        
+
+elif opcao == '7':
+     exit()        
